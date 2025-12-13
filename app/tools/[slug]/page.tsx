@@ -5,6 +5,12 @@ import WordCounter from '@/components/tools/WordCounter'
 import CaseConverter from '@/components/tools/CaseConverter'
 import ImageCompressor from '@/components/tools/ImageCompressor'
 import LoanCalculator from '@/components/tools/LoanCalculator'
+import PasswordGenerator from '@/components/tools/PasswordGenerator'
+import JsonFormatter from '@/components/tools/JsonFormatter'
+import QRGenerator from '@/components/tools/QRGenerator'
+import PercentageCalculator from '@/components/tools/PercentageCalculator'
+import Base64Tool from '@/components/tools/Base64Tool'
+import URLTool from '@/components/tools/URLTool'
 import ToolPageClient from './client'
 
 const toolComponents: Record<string, React.ComponentType> = {
@@ -12,6 +18,12 @@ const toolComponents: Record<string, React.ComponentType> = {
     'case-converter': CaseConverter,
     'image-compressor': ImageCompressor,
     'loan-calculator': LoanCalculator,
+    'password-generator': PasswordGenerator,
+    'json-formatter': JsonFormatter,
+    'qr-generator': QRGenerator,
+    'percentage-calculator': PercentageCalculator,
+    'base64-tool': Base64Tool,
+    'url-tool': URLTool,
 }
 
 export function generateStaticParams() {
@@ -20,6 +32,12 @@ export function generateStaticParams() {
         { slug: 'case-converter' },
         { slug: 'image-compressor' },
         { slug: 'loan-calculator' },
+        { slug: 'password-generator' },
+        { slug: 'json-formatter' },
+        { slug: 'qr-generator' },
+        { slug: 'percentage-calculator' },
+        { slug: 'base64-tool' },
+        { slug: 'url-tool' },
     ]
 }
 
