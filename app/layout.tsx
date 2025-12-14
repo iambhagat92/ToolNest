@@ -144,8 +144,16 @@ export default function RootLayout({
                                     <div>
                                         <h3 className="font-semibold text-lg mb-4">Legal</h3>
                                         <ul className="space-y-2 text-sm">
-                                            <li className="text-gray-600 dark:text-gray-400">Privacy Policy</li>
-                                            <li className="text-gray-600 dark:text-gray-400">Terms of Service</li>
+                                            <li>
+                                                <Link href="/privacy" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                                    Privacy Policy
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="/terms" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                                    Terms of Service
+                                                </Link>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
