@@ -173,7 +173,7 @@ export default function PrivacyPage() {
 
                 {/* Children's Privacy */}
                 <section>
-                    <h2 className="text-2xl font-bold mb-4">Children's Privacy</h2>
+                    <h2 className="text-2xl font-bold mb-4">Children&apos;s Privacy</h2>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         Our services are available to users of all ages. Since we do not collect personal information, our services are safe for children to use. However, we recommend parental supervision for young users.
                     </p>
@@ -195,7 +195,7 @@ export default function PrivacyPage() {
                 <section>
                     <h2 className="text-2xl font-bold mb-4">Changes to This Privacy Policy</h2>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date. We encourage you to review this Privacy Policy periodically for any changes.
+                        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated &quot;Last updated&quot; date. We encourage you to review this Privacy Policy periodically for any changes.
                     </p>
                 </section>
 

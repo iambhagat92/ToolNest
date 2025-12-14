@@ -37,7 +37,7 @@ export default function TermsPage() {
                         Agreement to Terms
                     </h2>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        By accessing and using ToolSphere ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the Service.
+                        By accessing and using ToolSphere (&quot;the Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the Service.
                     </p>
                 </section>
 
@@ -87,7 +87,7 @@ export default function TermsPage() {
                         <li>Attempt to gain unauthorized access to the Service or its systems</li>
                         <li>Interfere with or disrupt the Service or servers</li>
                         <li>Use automated tools (bots, scrapers) to access the Service excessively</li>
-                        <li>Copy, modify, or distribute the Service's code without permission</li>
+                        <li>Copy, modify, or distribute the Service&apos;s code without permission</li>
                         <li>Remove, obscure, or alter any copyright or proprietary notices</li>
                         <li>Use the Service to transmit malware, viruses, or harmful code</li>
                         <li>Impersonate ToolSphere or claim affiliation without authorization</li>
@@ -122,7 +122,7 @@ export default function TermsPage() {
                         Disclaimer of Warranties
                     </h2>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                        THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+                        THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
                         <li>Warranties of merchantability or fitness for a particular purpose</li>
@@ -207,7 +207,7 @@ export default function TermsPage() {
                 <section>
                     <h2 className="text-2xl font-bold mb-4">Changes to These Terms</h2>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        We reserve the right to modify these Terms at any time. We will notify users of any material changes by posting the new Terms on this page with an updated "Last updated" date. Your continued use of the Service after any changes constitutes acceptance of the new Terms.
+                        We reserve the right to modify these Terms at any time. We will notify users of any material changes by posting the new Terms on this page with an updated &quot;Last updated&quot; date. Your continued use of the Service after any changes constitutes acceptance of the new Terms.
                     </p>
                 </section>
 
