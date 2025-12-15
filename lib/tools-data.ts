@@ -308,7 +308,76 @@ export const tools: Tool[] = [
         ],
         relatedTools: ['percentage-calculator', 'loan-calculator'],
     },
-]
+    {
+        id: 'color-converter',
+        name: 'Color Converter',
+        slug: 'color-converter',
+        description: 'Convert colors between HEX, RGB, and HSL formats. visualize colors with a built-in picker and generate simple palettes. Essential for web designers and developers.',
+        shortDescription: 'Convert HEX, RGB, and HSL colors',
+        category: 'converter',
+        icon: 'Palette',
+        keywords: ['color converter', 'hex to rgb', 'rgb to hex', 'color picker', 'hsl converter', 'web colors'],
+        faqs: [
+            {
+                question: 'What color formats are supported?',
+                answer: 'We support conversion between HEX, RGB, and HSL formats. These are the most common formats used in web design and development.',
+            },
+            {
+                question: 'Can I copy the color codes?',
+                answer: 'Yes, simply click the copy button next to any color value to copy it to your clipboard.',
+            },
+            {
+                question: 'What is HSL?',
+                answer: 'HSL stands for Hue, Saturation, and Lightness. It is often considered more intuitive for humans to work with than RGB or HEX.',
+            },
+        ],
+        relatedTools: ['image-compressor'],
+    },
+    {
+        id: 'lorem-ipsum',
+        name: 'Lorem Ipsum Generator',
+        slug: 'lorem-ipsum',
+        description: 'Generate placeholder text for your designs. Choose between paragraphs, sentences, or words. Customizable quantity and instant copy functionality.',
+        shortDescription: 'Generate placeholder text for designs',
+        category: 'generator',
+        icon: 'FileText',
+        keywords: ['lorem ipsum', 'dummy text', 'placeholder text', 'text generator', 'design mockups'],
+        trending: true,
+        faqs: [
+            {
+                question: 'What is Lorem Ipsum?',
+                answer: 'Lorem Ipsum is standard dummy text used in the printing and typesetting industry. It looks like readable text but has no meaning.',
+            },
+            {
+                question: 'Why utilize dummy text?',
+                answer: 'It helps designers visualize the layout of a page without being distracted by the readable content.',
+            },
+        ],
+        relatedTools: ['word-counter', 'case-converter'],
+    },
+    {
+        id: 'markdown-editor',
+        name: 'Markdown Editor',
+        slug: 'markdown-editor',
+        description: 'Write and preview Markdown in real-time. Supports all standard Markdown syntax including code blocks, lists, and links. Great for README files and documentation.',
+        shortDescription: 'Real-time Markdown editor and previewer',
+        category: 'text',
+        icon: 'FileEdit',
+        keywords: ['markdown editor', 'markdown preview', 'readme generator', 'md editor', 'online markdown'],
+        faqs: [
+            {
+                question: 'Is this strict Markdown?',
+                answer: 'Yes, this editor supports standard Github Flavored Markdown syntax.',
+            },
+            {
+                question: 'Does it support code highlighting?',
+                answer: 'We provide basic formatting for code blocks. For full syntax highlighting, we use standard monospace styling.',
+            },
+        ],
+        relatedTools: ['word-counter'],
+    },
+],
+
 
 export function getToolBySlug(slug: string): Tool | undefined {
     return tools.find((tool) => tool.slug === slug)
@@ -353,4 +422,7 @@ export const searchIntents = [
     { keywords: ['base64', 'encode', 'decode'], toolSlug: 'base64-tool' },
     { keywords: ['url', 'encode url', 'decode url', 'percent'], toolSlug: 'url-tool' },
     { keywords: ['unit', 'convert', 'length', 'weight', 'temp'], toolSlug: 'unit-converter' },
+    { keywords: ['color', 'hex', 'rgb', 'hsl', 'picker', 'palette'], toolSlug: 'color-converter' },
+    { keywords: ['lorem', 'ipsum', 'dummy', 'text', 'placeholder'], toolSlug: 'lorem-ipsum' },
+    { keywords: ['markdown', 'editor', 'preview', 'md', 'write'], toolSlug: 'markdown-editor' },
 ]

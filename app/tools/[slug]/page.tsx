@@ -12,6 +12,9 @@ import PercentageCalculator from '@/components/tools/PercentageCalculator'
 import Base64Tool from '@/components/tools/Base64Tool'
 import URLTool from '@/components/tools/URLTool'
 import UnitConverter from '@/components/tools/UnitConverter'
+import ColorConverter from '@/components/tools/ColorConverter'
+import LoremIpsum from '@/components/tools/LoremIpsum'
+import MarkdownEditor from '@/components/tools/MarkdownEditor'
 import ToolPageClient from './client'
 
 const toolComponents: Record<string, React.ComponentType> = {
@@ -26,6 +29,9 @@ const toolComponents: Record<string, React.ComponentType> = {
     'base64-tool': Base64Tool,
     'url-tool': URLTool,
     'unit-converter': UnitConverter,
+    'color-converter': ColorConverter,
+    'lorem-ipsum': LoremIpsum,
+    'markdown-editor': MarkdownEditor,
 }
 
 export function generateStaticParams() {
@@ -41,6 +47,9 @@ export function generateStaticParams() {
         { slug: 'base64-tool' },
         { slug: 'url-tool' },
         { slug: 'unit-converter' },
+        { slug: 'color-converter' },
+        { slug: 'lorem-ipsum' },
+        { slug: 'markdown-editor' },
     ]
 }
 
