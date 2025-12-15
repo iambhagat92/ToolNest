@@ -282,6 +282,32 @@ export const tools: Tool[] = [
         ],
         relatedTools: ['base64-tool', 'json-formatter'],
     },
+    {
+        id: 'unit-converter',
+        name: 'Unit Converter',
+        slug: 'unit-converter',
+        description: 'Convert between different units of measurement instantly. Supports length, weight, temperature, area, digital storage, and time conversions. Essential tool for students, professionals, and everyday calculations.',
+        shortDescription: 'Convert length, weight, temperature, area, and more',
+        category: 'converter',
+        icon: 'ArrowRightLeft',
+        keywords: ['unit converter', 'length converter', 'weight converter', 'temperature converter', 'measurement converter', 'digital storage converter', 'time converter'],
+        recommended: true,
+        faqs: [
+            {
+                question: 'How accurate are the conversions?',
+                answer: 'Our conversions use standard international conversion factors for maximum accuracy. For very small or large numbers, we maintain high precision.',
+            },
+            {
+                question: 'Which units are supported?',
+                answer: 'We support all common metric and imperial units for length (m, km, ft, miles), weight (kg, lbs, oz), temperature (C, F, K), area, digital storage, and time.',
+            },
+            {
+                question: 'Can I copy the result?',
+                answer: 'Yes, simply click the copy icon next to the result field to copy the converted value to your clipboard.',
+            },
+        ],
+        relatedTools: ['percentage-calculator', 'loan-calculator'],
+    },
 ]
 
 export function getToolBySlug(slug: string): Tool | undefined {
@@ -326,4 +352,5 @@ export const searchIntents = [
     { keywords: ['percentage', 'percent', '%', 'calculate'], toolSlug: 'percentage-calculator' },
     { keywords: ['base64', 'encode', 'decode'], toolSlug: 'base64-tool' },
     { keywords: ['url', 'encode url', 'decode url', 'percent'], toolSlug: 'url-tool' },
+    { keywords: ['unit', 'convert', 'length', 'weight', 'temp'], toolSlug: 'unit-converter' },
 ]

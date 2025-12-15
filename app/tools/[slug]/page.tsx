@@ -11,6 +11,7 @@ import QRGenerator from '@/components/tools/QRGenerator'
 import PercentageCalculator from '@/components/tools/PercentageCalculator'
 import Base64Tool from '@/components/tools/Base64Tool'
 import URLTool from '@/components/tools/URLTool'
+import UnitConverter from '@/components/tools/UnitConverter'
 import ToolPageClient from './client'
 
 const toolComponents: Record<string, React.ComponentType> = {
@@ -24,6 +25,7 @@ const toolComponents: Record<string, React.ComponentType> = {
     'percentage-calculator': PercentageCalculator,
     'base64-tool': Base64Tool,
     'url-tool': URLTool,
+    'unit-converter': UnitConverter,
 }
 
 export function generateStaticParams() {
@@ -38,6 +40,7 @@ export function generateStaticParams() {
         { slug: 'percentage-calculator' },
         { slug: 'base64-tool' },
         { slug: 'url-tool' },
+        { slug: 'unit-converter' },
     ]
 }
 
