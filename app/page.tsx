@@ -22,6 +22,35 @@ export default function Home() {
 
     return (
         <div className="space-y-12 animate-fade-in">
+            {/* JSON-LD Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@graph': [
+                            {
+                                '@type': 'WebSite',
+                                name: 'ToolSphere',
+                                url: 'https://toolsphere.com',
+                                potentialAction: {
+                                    '@type': 'SearchAction',
+                                    target: 'https://toolsphere.com/?q={search_term_string}',
+                                    'query-input': 'required name=search_term_string',
+                                },
+                            },
+                            {
+                                '@type': 'Organization',
+                                name: 'ToolSphere',
+                                url: 'https://toolsphere.com',
+                                logo: 'https://toolsphere.com/logo.png',
+                                sameAs: ['https://twitter.com/toolsphere'],
+                            },
+                        ],
+                    }),
+                }}
+            />
+
             {/* Hero Section */}
             <div className="text-center max-w-3xl mx-auto">
                 <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30">

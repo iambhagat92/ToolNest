@@ -13,29 +13,54 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: {
-        default: 'ToolSphere - Premium Online Tools Dashboard',
+        default: 'ToolSphere - Free Online Tools, Converters & Calculators',
         template: '%s | ToolSphere',
     },
-    description: 'Professional web tools for productivity. Word counter, case converter, image compressor, loan calculator, and more. Fast, private, and free.',
-    keywords: ['online tools', 'web tools', 'productivity', 'word counter', 'text tools', 'image tools', 'calculators'],
+    description: 'Access the best free online tools: Unit Converter, Markdown Editor, Color Converter, Word Counter, and more. Fast, private, and no signup required.',
+    keywords: [
+        'online tools', 'web tools', 'productivity',
+        'unit converter', 'markdown editor', 'color converter',
+        'word counter', 'text tools', 'image compressor',
+        'loan calculator', 'free tools', 'developer tools'
+    ],
     authors: [{ name: 'ToolSphere Team' }],
     creator: 'ToolSphere',
     openGraph: {
         type: 'website',
         locale: 'en_US',
         url: 'https://toolsphere.com',
-        title: 'ToolSphere - Premium Online Tools Dashboard',
-        description: 'Professional web tools for productivity',
+        title: 'ToolSphere - Free Online Tools, Converters & Calculators',
+        description: 'Access the best free online tools: Unit Converter, Markdown Editor, Color Converter, Word Counter, and more. Fast, private, and no signup required.',
         siteName: 'ToolSphere',
+        images: [
+            {
+                url: '/og-image.png',
+                width: 1200,
+                height: 630,
+                alt: 'ToolSphere Dashboard',
+            },
+        ],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'ToolSphere - Premium Online Tools Dashboard',
-        description: 'Professional web tools for productivity',
+        title: 'ToolSphere - Free Online Tools, Converters & Calculators',
+        description: 'Access the best free online tools: Unit Converter, Markdown Editor, and more.',
+        images: ['/og-image.png'],
     },
     metadataBase: new URL('https://toolsphere.com'),
     alternates: {
         canonical: '/',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
     },
 }
 

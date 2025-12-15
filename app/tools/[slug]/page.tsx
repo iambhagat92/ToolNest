@@ -53,6 +53,36 @@ export function generateStaticParams() {
     ]
 }
 
+import { Metadata } from 'next'
+
+// ... existing imports
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+    const tool = getToolBySlug(params.slug)
+
+    if (!tool) {
+        return {
+            title: 'Tool Not Found',
+            description: 'The requested tool could not be found.',
+        }
+    }
+
+    return {
+        title: `${tool.name} - Free Online Tool`,
+        description: tool.description,
+        keywords: tool.keywords,
+        openGraph: {
+            title: `${tool.name} - Free Online Tool | ToolSphere`,
+            description: tool.description,
+            type: 'website',
+            url: `https://toolsphere.com/tools/${tool.slug}`,
+        },
+        alternates: {
+            canonical: `/tools/${tool.slug}`,
+        },
+    }
+}
+
 export default function ToolPage({ params }: { params: { slug: string } }) {
     const tool = getToolBySlug(params.slug)
 
